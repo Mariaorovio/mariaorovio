@@ -1,0 +1,1045 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
+  branch: master
+media_folder: theme/assets/images
+public_folder: /assets/images
+collections:
+  - name: pages
+    label: Pages
+    identifier_field: title
+    extension: md
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    folder: cms/pages
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '{{slug}}.html'
+      - &ref_0
+        label: Seo
+        name: seo
+        widget: object
+        collapsed: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: No index
+            name: noindex
+            widget: boolean
+            default: false
+            required: false
+          - label: Open Graph Title
+            name: og:title
+            widget: string
+            required: false
+          - label: Open Graph Image
+            name: og:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: Twitter Title
+            name: twitter:title
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Card
+            name: twitter:card
+            widget: string
+            default: summary
+            required: false
+          - label: Twitter Site
+            name: twitter:site
+            widget: string
+            required: false
+          - label: Twitter Creator
+            name: twitter:creator
+            widget: string
+            required: false
+          - label: Twitter Image
+            name: twitter:image
+            widget: image
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - label: Additional HTML tags
+            name: additional_tags
+            widget: text
+            required: false
+  - name: project
+    label: Projects
+    folder: cms/project
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Project Details
+        name: body
+        widget: markdown
+        required: false
+      - hint: Only add image here if this project is featured on the Landing Page
+        name: f_featured-image-on-the-landing-page
+        label: Featured image on the landing page
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_alt-text-for-featured-imnage-landing-page
+        label: Alt. text for featured image (landing page)
+        widget: string
+        required: false
+      - hint: Switch on for projects featured on the Landing page
+        name: f_featured
+        label: Featured
+        widget: boolean
+        required: false
+        default: false
+      - hint: Order of Projects on the Landing Page (maximum 5 projects)
+        name: f_order-of-projects-on-the-landing-page
+        label: Featured Order (for the Landing Page)
+        widget: number
+        required: false
+      - hint: Cover image for the project page .
+        name: f_thumbnail
+        label: Thumbnail image for the Projects page
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: >-
+          Please add an "Alt text" for your image (describe your image in
+          short) 
+        name: f_alt-text-for-images-for-the-projects-page
+        label: alt text for images for the "Projects page"
+        widget: string
+        required: false
+      - hint: Add all categories your project belongs to
+        name: f_field-of-work
+        label: Categories
+        widget: relation
+        required: true
+        collection: category
+        value_field: cms/category/{{slug}}.md
+        search_fields:
+          - slug
+          - name
+        display_fields:
+          - title
+        multiple: true
+      - hint: 'For the individual  "Work Template Page" '
+        name: f_client
+        label: Surface
+        widget: string
+        required: false
+      - hint: 'Categories divided by comma (for the Landing page) '
+        name: f_categories
+        label: Location
+        widget: text
+        required: false
+      - hint: ''
+        name: f_year-number
+        label: Year
+        widget: number
+        required: true
+      - hint: Image right next to the introduction
+        name: f_text-image
+        label: Text image
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: Full-width image for the "Work Template" page
+        name: f_work-template-1st-image-row-image-ful-width
+        label: Image Full Width for the "Work Template" page
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: >-
+          images to showcase your work for each "Project Page Template". Do not
+          forget to add an ALT text to your image here, by clicking on each
+          image
+        name: f_images-for-the-individual-project-page
+        label: All Images for the individual project page
+        widget: list
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: >-
+          If you have a dedicated page where you showcase your project, insert
+          the link here
+        name: f_link-for-the-project-s-site
+        label: Link for the project's site
+        widget: string
+        required: false
+      - hint: ''
+        name: f_type-of-intervention
+        label: Type of intervention
+        widget: select
+        required: true
+        options:
+          - label: Mural
+            value: Mural
+          - label: Intervention on a staircase
+            value: Intervention on a staircase
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: project
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[project].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: category
+    label: Categories
+    folder: cms/category
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: >-
+          A very short description about your service for the : Landing page/
+          Services section 
+        name: f_a-short-description-about-your-service
+        label: A short description about your service
+        widget: text
+        required: false
+      - hint: order of your services
+        name: f_number
+        label: order
+        widget: number
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: category
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[category].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: testimonials
+    label: Testimonials
+    folder: cms/testimonials
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name of the Company
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: Name of the client who gave the testimonial
+        name: f_name-of-the-client
+        label: Name of the client
+        widget: string
+        required: false
+      - hint: ''
+        name: f_testimonial
+        label: Testimonial
+        widget: text
+        required: false
+      - hint: image of the client giving the testimonield
+        name: f_image-of-the-client
+        label: image of the client
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: switch on if you want this to be featured on the landing page
+        name: f_featured-on-the-landing-page
+        label: featured on the landing page?
+        widget: boolean
+        required: false
+        default: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: testimonials
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[testimonials].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - label: Theme Settings
+    name: settings
+    identifier_field: title
+    extension: json
+    create: false
+    delete: false
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    files:
+      - label: General
+        name: site
+        file: cms/_data/settings/site.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: General
+          - hint: Full domain url (needed for a correct sitemap file)
+            name: domain
+            label: Domain
+            widget: string
+            required: false
+          - name: favicon
+            label: Favicon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: apple_touch_icon
+            label: Apple Touch Icon
+            widget: image
+            allow_multiple: false
+            required: false
+          - name: header_additional_content
+            label: Additional Content Header
+            hint: Content here will be placed before </head> tag
+            widget: text
+            required: false
+          - name: footer_additional_content
+            label: Additional Content Footer
+            hint: Content here will be placed before </body> tag
+            widget: text
+            required: false
+          - name: images_optimization
+            label: Images Optimization
+            widget: object
+            collapsed: false
+            fields:
+              - label: Image Formats
+                name: formats
+                widget: select
+                multiple: true
+                options:
+                  - label: Avif
+                    value: avif
+                  - label: Webp
+                    value: webp
+              - label: Image Dimensions
+                name: dimensions
+                widget: select
+                multiple: true
+                options:
+                  - label: '500'
+                    value: 500
+                  - label: '800'
+                    value: 800
+                  - label: '1080'
+                    value: 1080
+                  - label: '1600'
+                    value: 1600
+                  - label: '2000'
+                    value: 2000
+                  - label: '2600'
+                    value: 2600
+      - label: Colors
+        name: colors
+        file: cms/_data/colors.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Colors
+      - label: Texts
+        name: texts
+        file: cms/_data/texts.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Texts
+          - hint: 'Original text: Home, key: 2268ff'
+            label: Text
+            name: 2268ff
+            widget: string
+          - hint: 'Original text: Projects, key: -37ac8366'
+            label: Text
+            name: '-37ac8366'
+            widget: string
+          - hint: 'Original text: About, key: 3c2336d'
+            label: Text
+            name: 3c2336d
+            widget: string
+          - hint: 'Original text: All projects, key: 20991839'
+            label: Text
+            name: '20991839'
+            widget: string
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
+            widget: string
+          - hint: 'Original text: ,, key: 2c'
+            label: Text
+            name: 2c
+            widget: string
+          - hint: 'Original text: view, key: 373aa5'
+            label: Text
+            name: 373aa5
+            widget: string
+          - hint: 'Original text: project, key: -126fb4e7'
+            label: Text
+            name: '-126fb4e7'
+            widget: string
+          - hint: 'Original text: Coffee?, key: -64874e2d'
+            label: Text
+            name: '-64874e2d'
+            widget: string
+          - hint: 'Original text: mariaorovio@gmail.com, key: 9461a97'
+            label: Text
+            name: 9461a97
+            widget: string
+          - hint: 'Original text: Instagram, key: 792b2792'
+            label: Text
+            name: 792b2792
+            widget: string
+          - hint: "Original text: Maria Orovio\_/ All rights reserved., key: -22c0efed"
+            label: Text
+            name: '-22c0efed'
+            widget: string
+          - hint: 'Original text: Protected Page, key: -11d4bbff'
+            label: Text
+            name: '-11d4bbff'
+            widget: string
+          - hint: >-
+              Original text: Incorrect password. Please try again., key:
+              -f5c4b5f
+            label: Text
+            name: '-f5c4b5f'
+            widget: string
+          - hint: 'Original text: Hey, I’m , key: -2a62c4d'
+            label: Text
+            name: '-2a62c4d'
+            widget: string
+          - hint: 'Original text: María, key: 46af2d2'
+            label: Text
+            name: 46af2d2
+            widget: string
+          - hint: 'Original text: , , key: 574'
+            label: Text
+            name: '574'
+            widget: string
+          - hint: >-
+              Original text: a Madrid based architect creating through , key:
+              789b3c86
+            label: Text
+            name: 789b3c86
+            widget: string
+          - hint: 'Original text: color. , key: 3898e855'
+            label: Text
+            name: '3898e855'
+            widget: string
+          - hint: >-
+              Original text: I work through technique, geometry and color to
+              reactivate spaces that invite us to interact, socialize and live
+              together., key: -3b2b1d38
+            label: Text
+            name: '-3b2b1d38'
+            widget: text
+          - hint: 'Original text: Featured Works, key: -344f6af0'
+            label: Text
+            name: '-344f6af0'
+            widget: string
+          - hint: 'Original text: Testimonials, key: 1590c3d4'
+            label: Text
+            name: 1590c3d4
+            widget: string
+          - hint: 'Original text: Go to all projects, key: 3e1dda86'
+            label: Text
+            name: 3e1dda86
+            widget: string
+          - hint: 'Original text: Page Not Found, key: -40b0787c'
+            label: Text
+            name: '-40b0787c'
+            widget: string
+          - hint: >-
+              Original text: The page you are looking for doesn't exist or has
+              been moved, key: 556d64d8
+            label: Text
+            name: 556d64d8
+            widget: string
+          - hint: 'Original text: Go Home, key: 6b29b517'
+            label: Text
+            name: 6b29b517
+            widget: string
+          - hint: >-
+              Original text: I am passionate about architecture, color and
+              people., key: 6ec09cd7
+            label: Text
+            name: 6ec09cd7
+            widget: string
+          - hint: >-
+              Original text: I am María Corrales Orovio, an architect focused on
+              urban art, born in Madrid in 1994. I spent my first years of life
+              in France and Belgium and finally returned to Madrid where I would
+              later graduate in Architecture at the Escuela Técnica Superior de
+              Arquitectura de Madrid., key: -28737614
+            label: Text
+            name: '-28737614'
+            widget: text
+          - hint: >-
+              Original text: In 2013 I met the work of the artistic collective
+              Boa Mistura and in 2016, while I was doing my fourth year in the
+              Atacama Desert (Chile), I had the opportunity to be part for the
+              first time of a participatory art project with them, with whom
+              from then on I could develop and grow as a professional in
+              different parts of the world until 2022., key: 61257c1e
+            label: Text
+            name: 61257c1e
+            widget: text
+          - hint: >-
+              Original text: In 2018 I directed as part of the collective the
+              project 'El alma no tiene color', in the Cañada Real (Madrid), and
+              after the experience in 2022 developing the project 'Miroir' in
+              Nîmes (France), my first solo project, I decided to start
+              discovering and telling my own story., key: 27b6986a
+            label: Text
+            name: 27b6986a
+            widget: text
+          - hint: >-
+              Original text: I am interested in continuing to learn and develop
+              this form of urban transformation, to continue working through
+              technique, geometry, and color to reactivate spaces that invite us
+              to relate, interact, and live together., key: -ed26d6b
+            label: Text
+            name: '-ed26d6b'
+            widget: text
+          - hint: 'Original text: Experience, key: 71b8358a'
+            label: Text
+            name: 71b8358a
+            widget: string
+          - hint: 'Original text: Experience in Boa Mistura, key: 2098bf76'
+            label: Text
+            name: 2098bf76
+            widget: string
+          - hint: 'Original text: HOGAR, key: 41b9851'
+            label: Text
+            name: 41b9851
+            widget: string
+          - hint: 'Original text: Madrid, Spain., key: -39189d0a'
+            label: Text
+            name: '-39189d0a'
+            widget: string
+          - hint: 'Original text: 2022, key: 1774fe'
+            label: Text
+            name: 1774fe
+            widget: string
+          - hint: 'Original text: ENTRE CERRO Y MAR, key: -50e73f5e'
+            label: Text
+            name: '-50e73f5e'
+            widget: string
+          - hint: 'Original text: Antofagasta, Chile., key: -acdf18'
+            label: Text
+            name: '-acdf18'
+            widget: string
+          - hint: 'Original text: TRILLENDE LENTE, key: 6e7644fb'
+            label: Text
+            name: 6e7644fb
+            widget: string
+          - hint: 'Original text: Heerlen, Netherlands., key: 2bad5f3d'
+            label: Text
+            name: 2bad5f3d
+            widget: string
+          - hint: 'Original text: 2021, key: 1774fd'
+            label: Text
+            name: 1774fd
+            widget: string
+          - hint: 'Original text: UNIÓN, key: 4d26eab'
+            label: Text
+            name: 4d26eab
+            widget: string
+          - hint: >-
+              Original text: CDMX, Mexico/ Medellin, Colombia/ San Juan, Puerto
+              Rico/ Santo Domingo, Dominican Republic/ Santiago de Chile, Chile/
+              Madrid, Spain., key: 8c1152d
+            label: Text
+            name: 8c1152d
+            widget: text
+          - hint: 'Original text: AVENIR, key: 73c77147'
+            label: Text
+            name: 73c77147
+            widget: string
+          - hint: 'Original text: Bouillargues, France., key: -3385baef'
+            label: Text
+            name: '-3385baef'
+            widget: string
+          - hint: 'Original text: NOS ESTÁN APAGANDO, key: 748d98a8'
+            label: Text
+            name: 748d98a8
+            widget: string
+          - hint: 'Original text: RENCONTRE, key: 12956120'
+            label: Text
+            name: '12956120'
+            widget: string
+          - hint: 'Original text: Paris, France., key: -1834fdac'
+            label: Text
+            name: '-1834fdac'
+            widget: string
+          - hint: 'Original text: 2020, key: 1774fc'
+            label: Text
+            name: 1774fc
+            widget: string
+          - hint: 'Original text: REFUGIO, key: 6b7f822b'
+            label: Text
+            name: 6b7f822b
+            widget: string
+          - hint: 'Original text: CENTRO DE JUVENTUD, key: 6b691213'
+            label: Text
+            name: 6b691213
+            widget: string
+          - hint: 'Original text: Tenerife, Spain., key: -2f2eea9'
+            label: Text
+            name: '-2f2eea9'
+            widget: string
+          - hint: 'Original text: BAUHAUS, key: 1715ce4d'
+            label: Text
+            name: 1715ce4d
+            widget: string
+          - hint: 'Original text: Berlin, Germany., key: -127b564f'
+            label: Text
+            name: '-127b564f'
+            widget: string
+          - hint: 'Original text: 2019, key: 1774e6'
+            label: Text
+            name: '1774e6'
+            widget: string
+          - hint: 'Original text: SOMOS, key: 4b6b315'
+            label: Text
+            name: 4b6b315
+            widget: string
+          - hint: 'Original text: Mérida, Spain., key: 29f31749'
+            label: Text
+            name: 29f31749
+            widget: string
+          - hint: 'Original text: SIMBIOSIS, key: f6f524c'
+            label: Text
+            name: f6f524c
+            widget: string
+          - hint: 'Original text: Gran Canaria, Spain., key: 63aed42a'
+            label: Text
+            name: 63aed42a
+            widget: string
+          - hint: 'Original text: EL ALMA NO TIENE COLOR, key: 4b8e3273'
+            label: Text
+            name: 4b8e3273
+            widget: string
+          - hint: 'Original text: Cañada Real - Madrid, Spain., key: -a6a056a'
+            label: Text
+            name: '-a6a056a'
+            widget: string
+          - hint: 'Original text: 2018, key: 1774e5'
+            label: Text
+            name: '1774e5'
+            widget: string
+          - hint: 'Original text: MÁSCARAS DE LA TIRANA, key: 6e12fa3c'
+            label: Text
+            name: 6e12fa3c
+            widget: string
+          - hint: 'Original text: 2016, key: 1774e3'
+            label: Text
+            name: '1774e3'
+            widget: string
+          - hint: 'Original text: Studies, key: -cc8d7f9'
+            label: Text
+            name: '-cc8d7f9'
+            widget: string
+          - hint: 'Original text: Masters degree in architecture, key: -20e8f617'
+            label: Text
+            name: '-20e8f617'
+            widget: string
+          - hint: 'Original text: ETSAM UPM - Madrid, Spain., key: 7fede207'
+            label: Text
+            name: 7fede207
+            widget: string
+          - hint: 'Original text: 2018-2019, key: -e379732'
+            label: Text
+            name: '-e379732'
+            widget: string
+          - hint: 'Original text: Bachelor''s degree in architecture, key: 620ef480'
+            label: Text
+            name: 620ef480
+            widget: string
+          - hint: >-
+              Original text: Universidad Católica del Norte (International
+              exchange program) - Antofagasta, Chile., key: -1b0d11aa
+            label: Text
+            name: '-1b0d11aa'
+            widget: string
+          - hint: 'Original text: 2016-2017, key: -11a14872'
+            label: Text
+            name: '-11a14872'
+            widget: string
+          - hint: 'Original text: BACHELOR''S DEGREE IN ARCHITECTURE, key: -221ff740'
+            label: Text
+            name: '-221ff740'
+            widget: string
+          - hint: 'Original text: 2012-2017, key: -1874aaee'
+            label: Text
+            name: '-1874aaee'
+            widget: string
+          - hint: 'Original text: Acknowledgments, key: 2e783d6c'
+            label: Text
+            name: 2e783d6c
+            widget: string
+          - hint: >-
+              Original text: Premio model +. Model festival de arquitectures,
+              key: -43e034a3
+            label: Text
+            name: '-43e034a3'
+            widget: string
+          - hint: 'Original text: Barcelona, Spain., key: -46b6955c'
+            label: Text
+            name: '-46b6955c'
+            widget: string
+          - hint: 'Original text: 2023, key: 1774ff'
+            label: Text
+            name: 1774ff
+            widget: string
+          - hint: 'Original text: Exhibitions and publications, key: 4d2537ac'
+            label: Text
+            name: 4d2537ac
+            widget: string
+          - hint: 'Original text: FLORITURAS, key: 51fb11a3'
+            label: Text
+            name: 51fb11a3
+            widget: string
+          - hint: >-
+              Original text: Sophie Aguilera x María Orovio. Exhibition at
+              Galería Échale Guindas. Madrid, Spain., key: 71e1d2e6
+            label: Text
+            name: 71e1d2e6
+            widget: string
+          - hint: 'Original text: 2024, key: 177500'
+            label: Text
+            name: '177500'
+            widget: string
+          - hint: 'Original text: INTANGIBLE MATERIALS, key: a27209'
+            label: Text
+            name: a27209
+            widget: string
+          - hint: >-
+              Original text: Conference at the ATHENS programme in UPM., key:
+              6a52f800
+            label: Text
+            name: 6a52f800
+            widget: string
+          - hint: 'Original text: LA PALOMA X MARÍA OROVIO, key: -36513f8d'
+            label: Text
+            name: '-36513f8d'
+            widget: string
+          - hint: >-
+              Original text: Exhibition at La Paloma Design Studio V67., key:
+              -1569a2d8
+            label: Text
+            name: '-1569a2d8'
+            widget: string
+          - hint: 'Original text: EVERcIENDO A TRAVÉS DEL COLOR, key: 18941d2'
+            label: Text
+            name: 18941d2
+            widget: string
+          - hint: 'Original text: Article in magazine Tectónica., key: -123900c1'
+            label: Text
+            name: '-123900c1'
+            widget: string
+          - hint: 'Original text: ejerciendo a través del color, key: 41b3e15e'
+            label: Text
+            name: 41b3e15e
+            widget: string
+          - hint: 'Original text: Conference at COAM., key: 155d5dcd'
+            label: Text
+            name: 155d5dcd
+            widget: string
+          - hint: 'Original text: EL alma no tiene color, key: 2fb986b3'
+            label: Text
+            name: 2fb986b3
+            widget: string
+          - hint: 'Original text: Publication in magazine Pasages., key: -3f796183'
+            label: Text
+            name: '-3f796183'
+            widget: string
+          - hint: 'Original text: Surface, key: -b3d7b73'
+            label: Text
+            name: '-b3d7b73'
+            widget: string
+          - hint: 'Original text: Location, key: 752a03d5'
+            label: Text
+            name: 752a03d5
+            widget: string
+          - hint: 'Original text: Year, key: 29fc5d'
+            label: Text
+            name: 29fc5d
+            widget: string
+      - label: Links
+        name: links
+        file: cms/_data/links.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Links
+          - hint: 'Original link: /, key: 2f'
+            label: Link
+            name: 2f
+            widget: string
+          - hint: 'Original link: /projects/, key: -5bda445a'
+            label: Link
+            name: '-5bda445a'
+            widget: string
+          - hint: 'Original link: /about/, key: 61642f31'
+            label: Link
+            name: 61642f31
+            widget: string
+          - hint: 'Original link: #nav, key: 119220'
+            label: Link
+            name: '119220'
+            widget: string
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
+          - hint: >-
+              Original link: https://www.instagram.com/mariaorovio_/, key:
+              -321b2d7a
+            label: Link
+            name: '-321b2d7a'
+            widget: string
+      - label: Images
+        name: images
+        file: cms/_data/images.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Images
+          - label: Image
+            name: '-459c6b65'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 4abef31c
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-371f8acf'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5021bac3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-41b83d0c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+publish_mode: editorial_workflow
