@@ -41,7 +41,7 @@ f_field-of-work:
   - cms/category/art-direction.md
 f_year-number: 2023
 f_type-of-intervention: Intervention on a staircase
-f_year-2: '2024-01-01T00:00:00.000Z'
+f_year-2: '2023-01-01T00:00:00.000Z'
 layout: '[project].html'
 tags: project
 ---

@@ -56,7 +56,7 @@ f_images-for-the-individual-project-page:
 slug: larbus
 updated-on: '2025-02-26T12:34:02.180Z'
 created-on: '2025-02-26T12:17:53.595Z'
-published-on: '2025-02-26T12:34:02.180Z'
+published-on: '2025-03-08T11:15:13.838Z'
 layout: '[project].html'
 tags: project
 ---
