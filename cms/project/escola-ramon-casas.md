@@ -71,7 +71,7 @@ updated-on: '2025-02-26T12:18:09.108Z'
 created-on: '2024-03-20T15:58:34.105Z'
 published-on: '2025-02-26T12:18:09.108Z'
 f_type-of-intervention: Mural
-f_year-2: '2022-01-01T00:00:00.000Z'
+f_year-2: '2024-01-01T00:00:00.000Z'
 layout: '[project].html'
 tags: project
 ---
