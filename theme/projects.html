@@ -127,7 +127,7 @@ color:currentcolor;
         <div class="padding-global">
           <div class="container-large">
             <div class="padding-section-small">
-              {%- assign collection = collections.project | sort: "f_year-2" -%}<div fs-cmsstatic-element="list" class="projects_wrapper w-dyn-list">
+              {%- assign collection = collections.project | sort: "f_year-2" | reverse -%}<div fs-cmsstatic-element="list" class="projects_wrapper w-dyn-list">
                 {%- unless collection.length == 0 -%}<div fs-cmsfilter-element="list" fs-cmsnest-element="list" role="list" class="projects_list w-dyn-items">
                   {%- for item in collection -%}<div id="w-node-_133d6fae-1caf-72c4-b056-e9e9397b5ed4-f1f1ef1c" data-w-id="133d6fae-1caf-72c4-b056-e9e9397b5ed4" role="listitem" class="project_item w-dyn-item">
                     <a href="{{ item.url }}" class="projects_image-wrapper w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="eager" src="{{ item.data.f_thumbnail.url }}" class="image_projects"></a>
