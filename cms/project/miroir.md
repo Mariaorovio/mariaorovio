@@ -65,7 +65,7 @@ f_field-of-work:
 updated-on: '2024-09-24T19:59:53.534Z'
 created-on: '2024-04-09T09:07:11.930Z'
 published-on: '2024-09-24T20:05:05.237Z'
-f_year-2: '2024-05-01T10:00:00.000Z'
+f_year-2: '2022-05-01T10:00:00.000Z'
 layout: '[project].html'
 tags: project
 ---

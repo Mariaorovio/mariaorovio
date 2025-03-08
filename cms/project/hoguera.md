@@ -67,7 +67,7 @@ f_work-template-1st-image-row-image-ful-width:
     https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/65fb042392d8e66303680313_Maria%20Jou%20Sol-8.jpg
   alt: null
 f_type-of-intervention: Mural
-f_year-2: '2024-03-01T11:00:00.000Z'
+f_year-2: '2022-03-01T11:00:00.000Z'
 layout: '[project].html'
 tags: project
 ---

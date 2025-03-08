@@ -41,7 +41,7 @@ f_images-for-the-individual-project-page:
       https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/65fb04f9871cd94ef9984049_IMG_3198.jpg
     alt: null
 f_type-of-intervention: Mural
-f_year-2: '2024-02-01T00:00:00.000Z'
+f_year-2: '2022-02-01T00:00:00.000Z'
 layout: '[project].html'
 tags: project
 ---

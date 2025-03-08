@@ -85,7 +85,7 @@ f_work-template-1st-image-row-image-ful-width:
   url: >-
     https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c5d8a361678dbdc1b2_Bioma%2Bmodel-102.jpg
   alt: null
-f_year-2: '2024-07-01T10:00:00.000Z'
+f_year-2: '2023-07-01T10:00:00.000Z'
 layout: '[project].html'
 tags: project
 ---
