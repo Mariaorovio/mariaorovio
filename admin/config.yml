@@ -199,10 +199,15 @@ collections:
         label: Location
         widget: text
         required: false
-      - hint: ''
+      - hint: Year that appears on thumbnail
         name: f_year-number
         label: Year
         widget: number
+        required: true
+      - hint: To order projects in tab
+        name: f_year-2
+        label: Date
+        widget: datetime
         required: true
       - hint: Image right next to the introduction
         name: f_text-image
@@ -502,6 +507,14 @@ collections:
             name: title
             widget: hidden
             default: Texts
+          - hint: 'Original text: view, key: 373aa5'
+            label: Text
+            name: 373aa5
+            widget: string
+          - hint: 'Original text: project, key: -126fb4e7'
+            label: Text
+            name: '-126fb4e7'
+            widget: string
           - hint: 'Original text: Home, key: 2268ff'
             label: Text
             name: 2268ff
@@ -513,52 +526,6 @@ collections:
           - hint: 'Original text: About, key: 3c2336d'
             label: Text
             name: 3c2336d
-            widget: string
-          - hint: 'Original text: All projects, key: 20991839'
-            label: Text
-            name: '20991839'
-            widget: string
-          - hint: 'Original text: No items found., key: 3d503d2b'
-            label: Text
-            name: 3d503d2b
-            widget: string
-          - hint: 'Original text: ,, key: 2c'
-            label: Text
-            name: 2c
-            widget: string
-          - hint: 'Original text: view, key: 373aa5'
-            label: Text
-            name: 373aa5
-            widget: string
-          - hint: 'Original text: project, key: -126fb4e7'
-            label: Text
-            name: '-126fb4e7'
-            widget: string
-          - hint: 'Original text: Coffee?, key: -64874e2d'
-            label: Text
-            name: '-64874e2d'
-            widget: string
-          - hint: 'Original text: mariaorovio@gmail.com, key: 9461a97'
-            label: Text
-            name: 9461a97
-            widget: string
-          - hint: 'Original text: Instagram, key: 792b2792'
-            label: Text
-            name: 792b2792
-            widget: string
-          - hint: "Original text: Maria Orovio\_/ All rights reserved., key: -22c0efed"
-            label: Text
-            name: '-22c0efed'
-            widget: string
-          - hint: 'Original text: Protected Page, key: -11d4bbff'
-            label: Text
-            name: '-11d4bbff'
-            widget: string
-          - hint: >-
-              Original text: Incorrect password. Please try again., key:
-              -f5c4b5f
-            label: Text
-            name: '-f5c4b5f'
             widget: string
           - hint: 'Original text: Hey, I’m , key: -2a62c4d'
             label: Text
@@ -593,6 +560,10 @@ collections:
             label: Text
             name: '-344f6af0'
             widget: string
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
+            widget: string
           - hint: 'Original text: Testimonials, key: 1590c3d4'
             label: Text
             name: 1590c3d4
@@ -600,6 +571,32 @@ collections:
           - hint: 'Original text: Go to all projects, key: 3e1dda86'
             label: Text
             name: 3e1dda86
+            widget: string
+          - hint: 'Original text: Coffee?, key: -64874e2d'
+            label: Text
+            name: '-64874e2d'
+            widget: string
+          - hint: 'Original text: mariaorovio@gmail.com, key: 9461a97'
+            label: Text
+            name: 9461a97
+            widget: string
+          - hint: 'Original text: Instagram, key: 792b2792'
+            label: Text
+            name: 792b2792
+            widget: string
+          - hint: "Original text: Maria Orovio\_/ All rights reserved., key: -22c0efed"
+            label: Text
+            name: '-22c0efed'
+            widget: string
+          - hint: 'Original text: Protected Page, key: -11d4bbff'
+            label: Text
+            name: '-11d4bbff'
+            widget: string
+          - hint: >-
+              Original text: Incorrect password. Please try again., key:
+              -f5c4b5f
+            label: Text
+            name: '-f5c4b5f'
             widget: string
           - hint: 'Original text: Page Not Found, key: -40b0787c'
             label: Text
@@ -910,6 +907,14 @@ collections:
             label: Text
             name: '-3f796183'
             widget: string
+          - hint: 'Original text: All projects, key: 20991839'
+            label: Text
+            name: '20991839'
+            widget: string
+          - hint: 'Original text: ,, key: 2c'
+            label: Text
+            name: 2c
+            widget: string
           - hint: 'Original text: Surface, key: -b3d7b73'
             label: Text
             name: '-b3d7b73'
@@ -978,6 +983,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: '-371f8acf'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: '0'
             widget: object
             fields:
@@ -992,19 +1010,6 @@ collections:
                 required: false
           - label: Image
             name: 4abef31c
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-371f8acf'
             widget: object
             fields:
               - name: url

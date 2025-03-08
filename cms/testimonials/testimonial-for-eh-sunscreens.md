@@ -9,7 +9,7 @@ f_testimonial: >-
 title: ' EH Sunscreens Ltd.'
 f_image-of-the-client:
   url: >-
-    https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/65a3d6b07b3b901ff1f1ef78_client-02.jpg
+    https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/65a3d6b07b3b901ff1f1ef78_client-02.jpg
   alt: null
 slug: testimonial-for-eh-sunscreens
 updated-on: '2023-05-03T13:05:47.015Z'

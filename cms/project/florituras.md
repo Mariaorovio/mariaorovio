@@ -7,42 +7,43 @@ f_categories: Madrid, Spain.
 slug: florituras
 f_thumbnail:
   url: >-
-    https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a552742829ad9a25fa0c_WhatsApp%20Image%202024-03-07%20at%2012.11.06%20PM%20(1).jpeg
+    https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a552742829ad9a25fa0c_WhatsApp%20Image%202024-03-07%20at%2012.11.06%20PM%20(1).jpeg
   alt: null
 f_work-template-1st-image-row-image-ful-width:
   url: >-
-    https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a5698ddb2d43bcd78f3b_WhatsApp%20Image%202024-03-07%20at%2012.11.08%20PM%20(1).jpeg
+    https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a5698ddb2d43bcd78f3b_WhatsApp%20Image%202024-03-07%20at%2012.11.08%20PM%20(1).jpeg
   alt: null
 f_images-for-the-individual-project-page:
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a552742829ad9a25fa0c_WhatsApp%20Image%202024-03-07%20at%2012.11.06%20PM%20(1).jpeg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a552742829ad9a25fa0c_WhatsApp%20Image%202024-03-07%20at%2012.11.06%20PM%20(1).jpeg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a5758ddb2d43bcd79754_WhatsApp%20Image%202024-03-07%20at%2012.11.06%20PM.jpeg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a5758ddb2d43bcd79754_WhatsApp%20Image%202024-03-07%20at%2012.11.06%20PM.jpeg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a575c51bde7fc4a7e741_WhatsApp%20Image%202024-03-07%20at%2012.11.07%20PM%20(1).jpeg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a575c51bde7fc4a7e741_WhatsApp%20Image%202024-03-07%20at%2012.11.07%20PM%20(1).jpeg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a5758073bbac436530aa_WhatsApp%20Image%202024-03-07%20at%2012.11.07%20PM%20(2).jpeg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a5758073bbac436530aa_WhatsApp%20Image%202024-03-07%20at%2012.11.07%20PM%20(2).jpeg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a575e5dab7ef042edd99_WhatsApp%20Image%202024-03-07%20at%2012.11.07%20PM%20(3).jpeg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a575e5dab7ef042edd99_WhatsApp%20Image%202024-03-07%20at%2012.11.07%20PM%20(3).jpeg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a576929c7738249d8862_WhatsApp%20Image%202024-03-07%20at%2012.11.07%20PM.jpeg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a576929c7738249d8862_WhatsApp%20Image%202024-03-07%20at%2012.11.07%20PM.jpeg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a5698ddb2d43bcd78f3b_WhatsApp%20Image%202024-03-07%20at%2012.11.08%20PM%20(1).jpeg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a5698ddb2d43bcd78f3b_WhatsApp%20Image%202024-03-07%20at%2012.11.08%20PM%20(1).jpeg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6617a5751e8986906d97f500_WhatsApp%20Image%202024-03-07%20at%2012.11.08%20PM.jpeg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6617a5751e8986906d97f500_WhatsApp%20Image%202024-03-07%20at%2012.11.08%20PM.jpeg
     alt: null
 f_field-of-work:
   - cms/category/collaborative-mural.md
-updated-on: '2024-04-13T09:53:33.740Z'
+updated-on: '2024-09-24T20:04:31.233Z'
 created-on: '2024-04-11T08:55:24.462Z'
-published-on: '2024-04-13T10:47:23.099Z'
+published-on: '2024-09-24T20:05:05.237Z'
+f_year-2: '2024-08-01T10:00:00.000Z'
 layout: '[project].html'
 tags: project
 ---

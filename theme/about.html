@@ -74,7 +74,7 @@ height:100%;
   <div class="page-wrapper">
     <div data-animation="default" class="navbar w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" role="banner" data-duration="400" id="nav">
       <div class="padding-global">
-        <a href="{{ links.2f }}" class="home-signature w-inline-block"><img class="logo_image" src="{{ images.-459c6b65.url }}" width="200 " height="Auto" alt="{{ images.-459c6b65.alt | escape }}" sizes="(max-width: 767px) 35vw, 200px" loading="lazy"></a>
+        <a href="{{ links.2f }}" class="home-signature w-inline-block"><img class="logo_image" src="{{ images.-459c6b65.url }}" width="200 " height="Auto" alt="{{ images.-459c6b65.alt | escape }}" sizes="200px" loading="lazy"></a>
         <div class="nav_container">
           <a href="{{ links.2f }}" class="nav_logo-link w-nav-brand"></a>
           <nav role="navigation" class="nav_menu is-page-height-tablet w-nav-menu">
@@ -129,7 +129,7 @@ height:100%;
               <div class="section-heading-wrapper">
                 <h2>{{ texts.71b8358a }}</h2>
               </div>
-              {%- assign collection = collections.project | sort: "-f_year-number" -%}<div class="collection-list-wrapper w-dyn-list">
+              {%- assign collection = collections.project | sort: "f_year-number" -%}<div class="collection-list-wrapper w-dyn-list">
                 {%- unless collection.length == 0 -%}<div role="list" class="collection-list w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item">
                     <a href="{{ links.-5bda445a }}" class="text-size-regular--allcaps">{{ item.data.title }}</a>
@@ -230,7 +230,7 @@ height:100%;
                 <div id="w-node-d2c66533-f2df-87c5-f522-37e7664d3089-f1f1ef02" class="text-size-regular--allcaps is-right-aligned grey-color">{{ texts.1774e3 }}</div>
                 <div id="w-node-d2c66533-f2df-87c5-f522-37e7664d308b-f1f1ef02" class="flex-item-line"></div>
               </div>
-              <div id="w-node-_2a09c9b2-d9b9-ae54-6209-55477f2b9e0d-f1f1ef02" class="flex-item-line"></div>
+              <div class="flex-item-line"></div>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ created-on: '2023-05-03T11:32:58.404Z'
 published-on: '2024-04-12T17:00:43.823Z'
 f_image-of-the-client:
   url: >-
-    https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/65a3d6b07b3b901ff1f1ef7f_client-03.jpg
+    https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/65a3d6b07b3b901ff1f1ef7f_client-03.jpg
   alt: null
 f_name-of-the-client: Michael Brent
 f_testimonial: |-

@@ -78,7 +78,7 @@ height:100%;
   <div class="page-wrapper">
     <div data-animation="default" class="navbar w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" role="banner" data-duration="400" id="nav">
       <div class="padding-global">
-        <a href="{{ links.2f }}" class="home-signature w-inline-block"><img class="logo_image" src="{{ images.-459c6b65.url }}" width="200 " height="Auto" alt="{{ images.-459c6b65.alt | escape }}" sizes="(max-width: 767px) 35vw, 200px" loading="lazy"></a>
+        <a href="{{ links.2f }}" class="home-signature w-inline-block"><img class="logo_image" src="{{ images.-459c6b65.url }}" width="200 " height="Auto" alt="{{ images.-459c6b65.alt | escape }}" sizes="200px" loading="lazy"></a>
         <div class="nav_container">
           <a href="{{ links.2f }}" class="nav_logo-link w-nav-brand"></a>
           <nav role="navigation" class="nav_menu is-page-height-tablet w-nav-menu">
@@ -127,7 +127,7 @@ color:currentcolor;
         <div class="padding-global">
           <div class="container-large">
             <div class="padding-section-small">
-              {%- assign collection = collections.project | sort: "-f_year-number" -%}<div fs-cmsstatic-element="list" class="projects_wrapper w-dyn-list">
+              {%- assign collection = collections.project | sort: "f_year-2" -%}<div fs-cmsstatic-element="list" class="projects_wrapper w-dyn-list">
                 {%- unless collection.length == 0 -%}<div fs-cmsfilter-element="list" fs-cmsnest-element="list" role="list" class="projects_list w-dyn-items">
                   {%- for item in collection -%}<div id="w-node-_133d6fae-1caf-72c4-b056-e9e9397b5ed4-f1f1ef1c" data-w-id="133d6fae-1caf-72c4-b056-e9e9397b5ed4" role="listitem" class="project_item w-dyn-item">
                     <a href="{{ item.url }}" class="projects_image-wrapper w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="eager" src="{{ item.data.f_thumbnail.url }}" class="image_projects"></a>

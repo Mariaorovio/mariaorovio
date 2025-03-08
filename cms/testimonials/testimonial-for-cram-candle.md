@@ -9,7 +9,7 @@ f_testimonial: >-
 title: Luma Candle Inc.
 f_image-of-the-client:
   url: >-
-    https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/65a3d6b07b3b901ff1f1ef79_client-01.jpg
+    https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/65a3d6b07b3b901ff1f1ef79_client-01.jpg
   alt: null
 slug: testimonial-for-cram-candle
 updated-on: '2023-05-03T13:06:01.158Z'

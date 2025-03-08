@@ -11,7 +11,7 @@ f_testimonial: >-
 title: 'Boxed Water '
 f_image-of-the-client:
   url: >-
-    https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/65a3d6b07b3b901ff1f1ef8a_testim_05.jpg
+    https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/65a3d6b07b3b901ff1f1ef8a_testim_05.jpg
   alt: null
 slug: boxed-water
 updated-on: '2023-05-12T09:39:52.721Z'

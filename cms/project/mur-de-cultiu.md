@@ -7,84 +7,85 @@ f_categories: Barcelona, Spain.
 slug: mur-de-cultiu
 f_thumbnail:
   url: >-
-    https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/6616545ae41cdc64e7ef423a_Bioma%2Bmodel-99.jpg
+    https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/6616545ae41cdc64e7ef423a_Bioma%2Bmodel-99.jpg
   alt: null
 f_field-of-work:
   - cms/category/collaborative-mural.md
-updated-on: '2024-04-13T09:53:48.372Z'
+updated-on: '2024-09-24T19:59:06.923Z'
 created-on: '2024-04-10T08:57:26.779Z'
-published-on: '2024-04-13T10:47:23.099Z'
+published-on: '2024-09-24T20:05:05.237Z'
 f_images-for-the-individual-project-page:
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c30207fd29e2b730c5_Bioma%2Bmodel-17.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c30207fd29e2b730c5_Bioma%2Bmodel-17.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c3fc056520fdb7a72c_Bioma%2Bmodel-28.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c3fc056520fdb7a72c_Bioma%2Bmodel-28.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c26f2e9f9b44464133_Bioma%2Bmodel-46.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c26f2e9f9b44464133_Bioma%2Bmodel-46.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c398806d3096d480a4_Bioma%2Bmodel-48.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c398806d3096d480a4_Bioma%2Bmodel-48.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c070514b6a150fb962_Bioma%2Bmodel-61.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c070514b6a150fb962_Bioma%2Bmodel-61.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c0f40fd041864b3aa1_Bioma%2Bmodel-62.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c0f40fd041864b3aa1_Bioma%2Bmodel-62.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c17c76638781678290_Bioma%2Bmodel-63.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c17c76638781678290_Bioma%2Bmodel-63.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c1ccd410c0b5c2d14f_Bioma%2Bmodel-67.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c1ccd410c0b5c2d14f_Bioma%2Bmodel-67.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c1964ffe619a876a8c_Bioma%2Bmodel-71.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c1964ffe619a876a8c_Bioma%2Bmodel-71.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c3716baee4fe6ded36_Bioma%2Bmodel-72.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c3716baee4fe6ded36_Bioma%2Bmodel-72.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c11a4fb18df60e2f60_Bioma%2Bmodel-73.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c11a4fb18df60e2f60_Bioma%2Bmodel-73.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c1716baee4fe6debb3_Bioma%2Bmodel-77.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c1716baee4fe6debb3_Bioma%2Bmodel-77.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c11a4fb18df60e2f3b_Bioma%2Bmodel-79.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c11a4fb18df60e2f3b_Bioma%2Bmodel-79.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656bfb552dfc0fb1b91e0_Bioma%2Bmodel-80.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656bfb552dfc0fb1b91e0_Bioma%2Bmodel-80.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656bf0388d3ff609ed407_Bioma%2Bmodel-84.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656bf0388d3ff609ed407_Bioma%2Bmodel-84.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656bf1b3289171056fb95_Bioma%2Bmodel-95.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656bf1b3289171056fb95_Bioma%2Bmodel-95.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656bf4409288ca3b6a9ab_Bioma%2Bmodel-96.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656bf4409288ca3b6a9ab_Bioma%2Bmodel-96.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656bf98806d3096d47e9b_Bioma%2Bmodel-97.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656bf98806d3096d47e9b_Bioma%2Bmodel-97.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656bf14c7afcb81d5277b_Bioma%2Bmodel-99.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656bf14c7afcb81d5277b_Bioma%2Bmodel-99.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656bfc46866a4c0457dc7_Bioma%2Bmodel-101.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656bfc46866a4c0457dc7_Bioma%2Bmodel-101.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656bf43d855b0ac996e77_Bioma%2Bmodel-104.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656bf43d855b0ac996e77_Bioma%2Bmodel-104.jpg
     alt: null
   - url: >-
-      https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/66165c33a29f594863ae834c_PROPUESTA%20CONNECTHORT_CALENDARIO-01.jpg
+      https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/66165c33a29f594863ae834c_PROPUESTA%20CONNECTHORT_CALENDARIO-01.jpg
     alt: null
 f_work-template-1st-image-row-image-ful-width:
   url: >-
-    https://uploads-ssl.webflow.com/65a3d6b07b3b901ff1f1ef2c/661656c5d8a361678dbdc1b2_Bioma%2Bmodel-102.jpg
+    https://cdn.prod.website-files.com/65a3d6b07b3b901ff1f1ef2c/661656c5d8a361678dbdc1b2_Bioma%2Bmodel-102.jpg
   alt: null
+f_year-2: '2024-07-01T10:00:00.000Z'
 layout: '[project].html'
 tags: project
 ---
